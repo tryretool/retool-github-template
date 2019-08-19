@@ -7,7 +7,7 @@
 ### Quick and simple start.
 
 1. Run `./docker_setup` to initialize your environment
-2. Run `sudo docker-compose up` to start the Retool server
+2. Run `docker-compose up` to start the Retool server
 3. Go to `http://localhost:3000` and sign up!
 
 #### Updating Retool
