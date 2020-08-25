@@ -14,3 +14,7 @@
 // ***********************************************************
 
 import "./commands";
+
+beforeEach(() => {
+  cy.exec("./cypress/support/cmdutils/logout.sh");
+});
