@@ -15,6 +15,21 @@
 
 import "./commands";
 
+before(() => {
+  cy.exec("./cypress/support/cmdutils/countorgs.sh").then((result) => {
+    const { code, stderr, stdout } = result;
+    if (stdout === "0") {
+      cy.visit("http://localhost:3000/auth/signup");
+      cy.visit("http://localhost:3000/auth/signup");
+      cy.get("#firstName").type("example");
+      cy.get("#lastName").type("account");
+      cy.get("#email").type("admin@seed.retool.com");
+      cy.get("#password").type("password" + "\n");
+      cy.wait;
+    }
+  });
+});
+
 beforeEach(() => {
   cy.exec("./cypress/support/cmdutils/logout.sh");
 });
