@@ -20,7 +20,10 @@ RUN yarn install
 COPY --from=library/docker:latest /usr/local/bin/docker /usr/bin/docker
 COPY --from=docker/compose:1.22.0 /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-COPY docker-compose.yml docker.env apps config cypress cypress.json ./
+COPY docker.env retool.test.dockerfile version cypress.json ./
 COPY cypress/ ./cypress
+COPY apps/ ./apps
+COPY config/ ./config
+COPY docker-compose.test.yml ./docker-compose.yml
 
-CMD ["bash", "-c", "docker-compose up -d && yarn cypress run && docker-compose down"]
+CMD ["bash", "-c", "docker-compose up --build -d && ./cypress/wait-for-it.sh localhost:3000 && yarn cypress run && docker-compose down"]
