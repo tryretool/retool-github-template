@@ -93,6 +93,6 @@ Cypress.Commands.add("getDropdownComponent", id => {
 
 Cypress.Commands.add("getCurrentActiveDropdownMenu", () => {
   return cy
-    .get(".ant-select-dropdown ul.ant-select-dropdown-menu")
+    .get(`.ant-select-dropdown ul.ant-select-dropdown-menu`, { timeout: 60000 })
     .should("exist");
 });
