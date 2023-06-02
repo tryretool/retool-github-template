@@ -1,6 +1,6 @@
 ## Deprecated repository
 
-To ensure a better user experience when deploying Retool, we have made important updates to the Retool deployment instructions. The deployment instructions have been migrated to [official deployment guide](https://docs.retool.com/docs/deploy-with-helm](https://docs.retool.com/docs/self-hosted), hosted on [docs.retool.com](https://docs.retool.com/docs/deploy-with-helm](https://docs.retool.com/docs/self-hosted). The new guides provide more comprehensive set of deployment instructions with the goal of improving the deployment experience for our users.
+To ensure a better user experience when deploying Retool, we have made important updates to the Retool deployment instructions. The deployment instructions have been migrated to [official deployment guide](https://docs.retool.com/docs/self-hosted), hosted on [docs.retool.com](https://docs.retool.com/docs/deploy-with-helm](https://docs.retool.com/docs/self-hosted). The new guides provide more comprehensive set of deployment instructions with the goal of improving the deployment experience for our users.
 
 This repository has been deprecated, and is no longer maintained by the Retool team.
 
