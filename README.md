@@ -1,16 +1,7 @@
-## Getting started
+## Deprecated repository
 
-### Pre-requisite
+To ensure a better user experience when deploying Retool, we have made important updates to the Retool deployment instructions. The deployment instructions have been migrated to [official deployment guide](https://docs.retool.com/docs/deploy-with-helm](https://docs.retool.com/docs/self-hosted), hosted on [docs.retool.com](https://docs.retool.com/docs/deploy-with-helm](https://docs.retool.com/docs/self-hosted). The new guides provide more comprehensive set of deployment instructions with the goal of improving the deployment experience for our users.
 
-- make sure that `docker-compose` is install on your machine
+This repository has been deprecated, and is no longer maintained by the Retool team.
 
-### Quick and simple start.
-
-1. Run `./docker_setup` to initialize your environment
-2. Run `docker-compose up` to start the Retool server
-3. Go to `http://localhost:3000` and sign up!
-
-#### Updating Retool
-
-1. Run `./update_retool.sh`
-1. Alternatively, stop the server, and run `sudo docker-compose pull` and then `sudo docker-compose up -d`
+For any inquiries regarding deploying Retool, please feel free to reach out to us at support@retool.com.
